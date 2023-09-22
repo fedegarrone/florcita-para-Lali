@@ -1,0 +1,109 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-pet: #fcff33;
+  --color-centro: #e49b1a;
+  --color-tal: #65d90a;
+  --color-bg: #f6b2ff;
+  --color-section: #e946ff;
+}
+
+body {
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+}
+
+body > section {
+  border-radius: 3rem;
+  height: 500px;
+  width: 450px;
+  background-color: var(--color-section);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section > section {
+  position: relative;
+  top: -80px;
+}
+
+section > section > div {
+  position: absolute;
+  height: 80px;
+  background-color: var(--color-pet);
+  z-index: 1;
+}
+
+section > section > div:nth-child(1) {
+  border-radius: 40px;
+  aspect-ratio: 1;
+  border-radius: 35px;
+  height: 70px;
+  background-color: var(--color-centro);
+  top: -35px;
+  right: -35px;
+}
+
+section > section > div:nth-child(2) {
+  border-radius: 40px;
+  aspect-ratio: 1;
+  top: -110px;
+  left: -81px;
+}
+section > section > div:nth-child(3) {
+  border-radius: 40px;
+  aspect-ratio: 1;
+  top: -40px;
+  left: -120px;
+}
+section > section > div:nth-child(4) {
+  border-radius: 40px;
+  aspect-ratio: 1;
+  top: 30px;
+  left: -81px;
+}
+
+section > section > div:nth-child(5) {
+  border-radius: 40px;
+  aspect-ratio: 1;
+  top: 30px;
+  left: 1px;
+}
+
+section > section > div:nth-child(6) {
+  border-radius: 40px;
+  aspect-ratio: 1;
+  top: -40px;
+  left: 40px;
+}
+
+section > section > div:nth-child(7) {
+  border-radius: 40px;
+  aspect-ratio: 1;
+  top: -110px;
+  left: 1px;
+}
+section > section > div:nth-child(8) {
+  background-color: var(--color-tal);
+  width: 10px;
+  right: -5px;
+  height: 200px;
+  top: 35px;
+  z-index: 0;
+}
+
+section > div {
+  position: relative;
+  top: 180px;
+  text-align: center;
+  font-family: sans-serif;
+}
